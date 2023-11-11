@@ -31,7 +31,9 @@ https://zhuanlan.zhihu.com/p/630698425
 
 完成对IDF 工具链的搭建  但是我的这个为啥还是爆红
 
+算了尼玛老子不管了
 
+![image-20231111224715999](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/image-20231111224715999.png)
 
-
+能跑就行！
 
