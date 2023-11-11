@@ -1,11 +1,11 @@
 ---
 title: ESP-idf 与vscode环境搭建笔记
 tags:
-  -ESP32
-  -开发环境
+  - ESP32
+  - 开发环境
 ---
 
-
+ 
 
 #### 关于ESP-idf 开发 esp开发板 确实有点难度
 
