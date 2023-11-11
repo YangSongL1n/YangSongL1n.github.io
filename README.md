@@ -1,6 +1,6 @@
-# Bow to the new king
+# Bow to the New King
 
-我是IYANG！
+​								我是IYANG！
 
 <!-- .slide -->
 
