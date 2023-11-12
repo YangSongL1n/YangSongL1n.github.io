@@ -10,12 +10,13 @@
 
 - Site:  **Not Yet**
 
-<!-- .slide vertical=true -->
+<!-- .slide  -->
 
 ## My life motto
 - You only live once
-- Just do is** it** ！
-- 你他妈的就活一次，干就完了
+- Just do it ！
+- 你他妈的就活一次
+干就完了
 
 <!-- .slide vertical=true -->
 
