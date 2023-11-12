@@ -1,6 +1,6 @@
 # Bow to the New King
 
-​								我是IYANG！
+​								我是**IYANG**
 
 <!-- .slide -->
 
@@ -14,9 +14,10 @@
 
 ## My life motto
 - You only live once
+
 - Just do it ！
-- 你他妈的就活一次
-干就完了
+
+- 你他妈的就活一次  干就完了
 
 <!-- .slide vertical=true -->
 
