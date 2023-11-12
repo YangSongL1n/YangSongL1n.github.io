@@ -19,6 +19,8 @@
 
 - 你他妈的就活一次  干就完了
 
+<!-- .slide  -->
+
 <!-- .slide vertical=true -->
 
 - E-mail:**1993932965@qq.com**
