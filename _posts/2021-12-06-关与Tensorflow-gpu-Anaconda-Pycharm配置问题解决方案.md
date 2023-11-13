@@ -14,8 +14,7 @@ TensorFlow-gpu安装时要与CUDA、CUDNN版本对应。
 2.要安装的tesorflow-gpu对应的cuda版本。
 3.要安装的tesorflow-gpu对应的cudnn版本。
 4.要安装的tesorflow-gpu对应的python版本。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6efb94930bd94552b473f64667223659.png)
-
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/6efb94930bd94552b473f64667223659.png)
 
 准备材料 ：
 Anaconda(版本不限 能用就行)
@@ -25,15 +24,15 @@ pycharm
   如果没有控制面板，可以去Windows自带的微软商店下载安装，如果无法安装成功，考虑原电脑显卡驱动有问        题，考虑通过下载驱动精灵更新显卡驱动之后再进行安装
 安装tensorflow-gpu时需要根据自己电脑已有的cuda版本进行命令的选择，否则会导致tensorflow，cuda不可用（命令行显示的cuda版本为此驱动可支持的最大版本的cuda，如果需要其他版本的cuda可以自行安装）。
 如果想提升最大可兼容cuda版本，需要更新显卡驱动。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d882a792d19b4396913b52cfdd2135e4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/d882a792d19b4396913b52cfdd2135e4.png)
 记下来在你电脑上的  **CUDA Version**
 
 ## 第二步
 
 在开始菜单里面打开Anaconda  Prompt 创建一个只个tensorflow 用的 even 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6f601ab2aba942c693f2b83a47fd5edb.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/6f601ab2aba942c693f2b83a47fd5edb.png)
 选这个就可以 我的cuda版本在11.4  够用 cuda 10.1 然后对应的cudnn 是 7.6
-![在这里插入图片描述](https://img-blog.csdnimg.cn/16a80353126c40a79d7fd6affe5e14fe.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/16a80353126c40a79d7fd6affe5e14fe.png)
 
 ## 在Anaconda中创建虚拟环境
 
@@ -51,7 +50,7 @@ conda remove -n env_name --all
 conda env list
 ```
 这里环境就配好了 3.6 的python 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/d98f67c0da4b441d93bb1d92c2763b42.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/d98f67c0da4b441d93bb1d92c2763b42.png)
 
 ## 进到虚拟环境
 
@@ -59,16 +58,17 @@ conda env list
 conda activate tensor2.1
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/081b75e6491d4fdd9f293394884eb93d.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/081b75e6491d4fdd9f293394884eb93d.png)
 ## 安装指定 版本的TensorFlow
 ```python
 pip3 install tensorflow-gpu==2.1.0
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/10eeaf4caf0f4179b383981e1ea09f69.png)![在这里插入图片描述](https://img-blog.csdnimg.cn/d12a7a99480b446b9402fe279ce30f0b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/10eeaf4caf0f4179b383981e1ea09f69.png)![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/d12a7a99480b446b9402fe279ce30f0b.png)
 有了然后再给他装上够用 cuda 10.1 然后对应的cudnn 是 7.6
 如果已经安装好anaconda的同学，这部分执行出错，可能是channel的问题，可以参考文章[https://blog.csdn.net/weixin_29015051/article/details/112118017](https://blog.csdn.net/weixin_29015051/article/details/112118017)
 二：换源
 命令行执行：
+
 ```python
 conda config --set show_channel_urls yes
 ```
@@ -199,7 +199,7 @@ conda config --add channels conda-forge
 conda upgrade --all
 conda install cudatoolkit=10.1 cudnn -c conda-forge
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2595a86d27674b459f60aebe84467d28.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/2595a86d27674b459f60aebe84467d28.png)
 看看好没有
 
 ```python
@@ -207,28 +207,28 @@ import tensorflow as tf
 tf.test.is_gpu_available()
 ```
 成功 true
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c8b8f15f68ae4d588ec00574dbfa9e79.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/c8b8f15f68ae4d588ec00574dbfa9e79.png)
 
 ## 然后再稍微配置一下pycharm
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f35798c58d754771885eea3085c5de2c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b7dbdfa8a17a42b68544171f58269ad5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ecf8a994775e4b93b0712ad40fbbb80c.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c95aae83fd27469881e61a5ac4b4e713.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
-要是它自己没有找到的话 你就自己再选出这个![在这里插入图片描述](https://img-blog.csdnimg.cn/936daf706d6d41f2a4b23498aaa31de5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/f35798c58d754771885eea3085c5de2c.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/b7dbdfa8a17a42b68544171f58269ad5.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/ecf8a994775e4b93b0712ad40fbbb80c.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/c95aae83fd27469881e61a5ac4b4e713.png)
+要是它自己没有找到的话 你就自己再选出这个![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/936daf706d6d41f2a4b23498aaa31de5.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5666ec7bb64740be8462aa9514ed83ae.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)![在这里插入图片描述](https://img-blog.csdnimg.cn/b84fcfd0e5e04badb25fe4ddd0f18d9b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/5666ec7bb64740be8462aa9514ed83ae.png)![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/b84fcfd0e5e04badb25fe4ddd0f18d9b.png)
 
 ## 这样就好了？你在跑demo 是肯定会出现tensor 与 keras 什么不对应的
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/54ba6804b8794d71ba6a92dd93d73ffa.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBAcHlhbmd0aG9u,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/54ba6804b8794d71ba6a92dd93d73ffa.png)
 
 `
 记2022年5月16日再装配tensorflow-gpu
 `
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/f557affd6d2846048fa985bb22cc1cd4.png)
+![在这里插入图片描述](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/f557affd6d2846048fa985bb22cc1cd4.png)
 
-<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=AHlhbmdzb25nMWluQHFxLmNvbQ" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a>
+
 
 `
 记2023年11月05日再装配

@@ -5,12 +5,12 @@ tags:
 ---
 # 这笔记是关于学习modbus 通信协议得
 
-![image.png](https://img-blog.csdnimg.cn/img_convert/eeaf110291a0a6765a1fc5a9afb7a95f.png)
-![image.png](https://img-blog.csdnimg.cn/img_convert/c7ce9b742971a0828d756c1ebb79ee4e.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/eeaf110291a0a6765a1fc5a9afb7a95f.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/c7ce9b742971a0828d756c1ebb79ee4e.png)
 
 ADU ：应用数据单元
 PDU： 协议数据单元
-![image.png](https://img-blog.csdnimg.cn/img_convert/c4708ddd8583a957fea5434f295e51c7.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/c4708ddd8583a957fea5434f295e51c7.png)
 地址码：1个字节的从机地址码，=0：广播地址，=1-247：从机地址，=248-255：保留
 功能码：常用的就是01、02、03、04、05、06、15、16，具体描述见下图
 数据区：数据区包含这么几部分：起始地址、数量、数据，这三项是[大端模式](https://www.jianshu.com/p/86332cb5d648)(在大端模式中，将高位字节放在低位地址，低位字节放在高位地址)
@@ -28,11 +28,11 @@ CRC校验：两个字节，小端模式，校验的数据范围为：地址码+�
 | 写多个寄存器 | 16 0x10                                                      |
 
 01 01 00 00 00 01 FD CA
-![image.png](https://img-blog.csdnimg.cn/img_convert/75aeba39bb25cb9a376d3c0eb614ff8e.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/75aeba39bb25cb9a376d3c0eb614ff8e.png)
 ？读取线圈状态的意义是什么？
 没有任何意义 单纯的读取线圈映射的Slave 的引脚输出的高地位状态
-![image.png](https://img-blog.csdnimg.cn/img_convert/8ddbe91c380e0577266a2cf98836e885.png)
-![image.png](https://img-blog.csdnimg.cn/img_convert/200f2e25e07c1907745fa6ac45aaeb04.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/8ddbe91c380e0577266a2cf98836e885.png)
+![image.png](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/200f2e25e07c1907745fa6ac45aaeb04.png)
 网络上的一些关于CRC校验的代码
 CRC 校验
 
