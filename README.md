@@ -23,7 +23,7 @@
 
 <!-- .slide vertical=true -->
 
-- E-mail:**1993932965@qq.com**
+- E-mail:**yangsonglin0813@foxmail.com**
 - WeChat: **iYoung0813**
 - QQ: **1993932965**
 
