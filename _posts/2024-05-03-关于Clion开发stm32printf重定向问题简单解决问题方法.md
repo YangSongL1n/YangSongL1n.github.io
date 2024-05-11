@@ -14,3 +14,7 @@ setbuf(stdout,NULL);
 [参考来源2](https://blog.csdn.net/weixin_53473434/article/details/132423960)
 ![20240503115747](https://cdn.jsdelivr.net/gh/YangSongL1n/img_bed/20240503115747.png#pic_center)
 
+LDFLAGS += -lc -lrdimon -u _printf_float
+[text](https://blog.csdn.net/efengzu/article/details/114097173)
+[text](https://blog.csdn.net/weixin_42485732/article/details/107074797)
+[text](https://blog.csdn.net/salalei/article/details/119676667)
